@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>green ejs file | <%= title %> </title>
+</head>
+<body>
+    <% const name = 'mario' %>
+    <div class="header">
+        <h1><%= name %></h1>
+    </div>
+    <div class="blogs content">
+        <h2>all blogs</h2>
+    </div>
+<div class="fruits" style="width: 300px;display:flex;justify-content: space-around;"> fruits: 
+    <% if(fruits.length>0) { %>
+        <% fruits.forEach(fruit=>{ %> 
+        <span >
+            <a href="#<%= fruit%>""> <%= fruit %> </a>
+        </span>
+        <% }) %> 
+    <% } %> 
+</div>
+
+</body>
+</html>
